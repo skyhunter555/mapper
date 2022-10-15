@@ -1,0 +1,22 @@
+#default config value
+brokers: "localhost:9091,localhost:9092,localhost:9093"
+messageCount: 1000
+topicName: "demoInput"
+groupIdConfig: "consumerGroup"
+keyType: "UUID"
+timeoutBeforeConsume: 3
+sendOneMessageToOneKey: true
+consumer:
+  offsetResetLatest: "latest"
+  offsetResetEarlier: "earliest"
+  maxPoolRecords: 50
+  clientId: "client1"
+  clientRack: "rackId"
+  partitionAssignmentStrategy: "org.apache.kafka.clients.consumer.CooperativeStickyAssignor"
+producer:
+  acks: "all"
+  retries: 3
+  requestTimeoutMs: 230
+  lingerMs: 20
+  deliveryTimeoutMs: 1000
+

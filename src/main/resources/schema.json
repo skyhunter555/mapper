@@ -1,0 +1,354 @@
+{
+  "mapping": [
+      {
+        "target": "BSDevTeamID",
+        "source": "externalTeamId",
+        "transform": "integer_to_string"
+    },
+    {
+        "source": "teamName",
+        "target": "Brief"
+    },
+    {
+        "source": "teamName",
+        "target": "Name"
+    },
+    {
+        "target": "TeamMngrID",
+        "source": "managerId"
+    },
+    {
+        "target": "TeamLeaderID",
+        "source": "leaderId"
+    },
+    {
+        "target": "DepartmentID",
+        "source": "teamDepartmentId"
+    },
+    {
+        "target": "DepartmentID2",
+        "source": "teamDepartmentId"
+    },
+    {
+        "target": "TeamCuratorID",
+        "source": "curatorId"
+    },
+    {
+        "target": "TeamTypeID",
+        "source": "typeId"
+    }
+  ],
+  "sourceSchema": {
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+      "dateEnd",
+      "dateBegin",
+      "typeId",
+      "externalTeamId",
+      "leaderId",
+      "curatorId",
+      "managerId",
+      "statusId",
+      "teamGroupId",
+      "teamDepartmentId",
+      "teamName",
+      "teamId"
+    ],
+    "properties": {
+      "dateEnd": {
+        "type": "string",
+        "default": "",
+        "title": "The dateEnd Schema",
+        "examples": [
+          "2000-01-01"
+        ]
+      },
+      "dateBegin": {
+        "type": "string",
+        "default": "",
+        "title": "The dateBegin Schema",
+        "examples": [
+          "2000-01-01"
+        ]
+      },
+      "typeId": {
+        "type": "integer",
+        "default": 0,
+        "title": "The typeId Schema",
+        "examples": [
+          3
+        ]
+      },
+      "externalTeamId": {
+        "type": "string",
+        "default": "",
+        "title": "The externalTeamId Schema",
+        "examples": [
+          "40177"
+        ]
+      },
+      "leaderId": {
+        "type": "integer",
+        "default": 0,
+        "title": "The leaderId Schema",
+        "examples": [
+          22865
+        ]
+      },
+      "curatorId": {
+        "type": "integer",
+        "default": 0,
+        "title": "The curatorId Schema",
+        "examples": [
+          17516
+        ]
+      },
+      "managerId": {
+        "type": "integer",
+        "default": 0,
+        "title": "The managerId Schema",
+        "examples": [
+          22418
+        ]
+      },
+      "statusId": {
+        "type": "integer",
+        "default": 0,
+        "title": "The statusId Schema",
+        "examples": [
+          1
+        ]
+      },
+      "teamGroupId": {
+        "type": "integer",
+        "default": 0,
+        "title": "The teamGroupId Schema",
+        "examples": [
+          146
+        ]
+      },
+      "teamDepartmentId": {
+        "type": "integer",
+        "default": 0,
+        "title": "The teamDepartmentId Schema",
+        "examples": [
+          3040
+        ]
+      },
+      "teamName": {
+        "type": "string",
+        "default": "",
+        "title": "The teamName Schema",
+        "examples": [
+          "Клиентские решения"
+        ]
+      },
+      "teamId": {
+        "type": "integer",
+        "default": 0,
+        "title": "The teamId Schema",
+        "examples": [
+          40177
+        ]
+      }
+    },
+    "examples": [
+      {
+        "dateEnd": "2000-01-01",
+        "dateBegin": "2000-01-01",
+        "typeId": 3,
+        "externalTeamId": "40177",
+        "leaderId": 22865,
+        "curatorId": 17516,
+        "managerId": 22418,
+        "statusId": 1,
+        "teamGroupId": 146,
+        "teamDepartmentId": 3040,
+        "teamName": "Клиентские решения",
+        "teamId": 40177
+      }
+    ]
+  },
+  "targetSchema": {
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+      "BSDevTeamID",
+      "Brief",
+      "Name",
+      "TeamMngrID",
+      "TeamLeaderID",
+      "DepartmentID",
+      "DepartmentID2",
+      "TeamCuratorID",
+      "TeamTypeID",
+      "Mode"
+    ],
+    "properties": {
+      "BSDevTeamID": {
+        "type": "integer",
+        "default": 0,
+        "title": "The BSDevTeamID Schema",
+        "examples": [
+          40177
+        ]
+      },
+      "Brief": {
+        "type": "string",
+        "default": "",
+        "title": "The Brief Schema",
+        "examples": [
+          "Клиентские решения"
+        ]
+      },
+      "Name": {
+        "type": "string",
+        "default": "",
+        "title": "The Name Schema",
+        "examples": [
+          "Клиентские решения"
+        ]
+      },
+      "TeamMngrID": {
+        "type": "integer",
+        "default": 0,
+        "title": "The TeamMngrID Schema",
+        "examples": [
+          22418
+        ]
+      },
+      "TeamLeaderID": {
+        "type": "integer",
+        "default": 0,
+        "title": "The TeamLeaderID Schema",
+        "examples": [
+          22865
+        ]
+      },
+      "StateID": {
+        "type": "integer",
+        "default": 0,
+        "title": "The StateID Schema",
+        "examples": [
+          0
+        ]
+      },
+      "Flag": {
+        "type": "integer",
+        "default": 0,
+        "title": "The Flag Schema",
+        "examples": [
+          0
+        ]
+      },
+      "RecStatus": {
+        "type": "integer",
+        "default": 0,
+        "title": "The RecStatus Schema",
+        "examples": [
+          0
+        ]
+      },
+      "IsCanceled": {
+        "type": "integer",
+        "default": 0,
+        "title": "The IsCanceled Schema",
+        "examples": [
+          0
+        ]
+      },
+      "Link": {
+        "type": "string",
+        "default": "",
+        "title": "The Link Schema",
+        "examples": [
+          "http"
+        ]
+      },
+      "ProductGroupID": {
+        "type": "integer",
+        "default": 0,
+        "title": "The ProductGroupID Schema",
+        "examples": [
+          0
+        ]
+      },
+      "DepartmentID": {
+        "type": "integer",
+        "default": 0,
+        "title": "The DepartmentID Schema",
+        "examples": [
+          3040
+        ]
+      },
+      "DepartmentID2": {
+        "type": "integer",
+        "default": 0,
+        "title": "The DepartmentID2 Schema",
+        "examples": [
+          3040
+        ]
+      },
+      "TeamCuratorID": {
+        "type": "integer",
+        "default": 0,
+        "title": "The TeamCuratorID Schema",
+        "examples": [
+          17516
+        ]
+      },
+      "TeamTypeID": {
+        "type": "integer",
+        "default": 0,
+        "title": "The TeamTypeID Schema",
+        "examples": [
+          3
+        ]
+      },
+      "JiraSpaceID": {
+        "type": "integer",
+        "default": 0,
+        "title": "The JiraSpaceID Schema",
+        "examples": [
+          0
+        ]
+      },
+      "Mode": {
+        "type": "integer",
+        "default": 0,
+        "title": "The Mode Schema",
+        "examples": [
+          0
+        ]
+      }
+    },
+    "examples": [
+      {
+        "BSDevTeamID": 40177,
+        "Brief": "Клиентские решения",
+        "Name": "Клиентские решения",
+        "TeamMngrID": 22418,
+        "TeamLeaderID": 22865,
+        "StateID": 0,
+        "Flag": 0,
+        "RecStatus": 0,
+        "IsCanceled": 0,
+        "Link": "http",
+        "ProductGroupID": 0,
+        "DepartmentID": 3040,
+        "DepartmentID2": 3040,
+        "TeamCuratorID": 17516,
+        "TeamTypeID": 3,
+        "JiraSpaceID": 0,
+        "Mode": 0
+      }
+    ]
+  }
+}
